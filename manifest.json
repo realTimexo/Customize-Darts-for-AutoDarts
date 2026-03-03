@@ -1,0 +1,33 @@
+{
+  "content_scripts": [
+    {
+      "js": [
+        "content-scripts/content.js"
+      ],
+      "matches": [
+        "*://play.autodarts.io/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "description": "This Extension allows you to make your own unique darts for AutoDarts",
+  "developer": {
+    "name": "97ba02e3-0e36-4207-901e-d19db1bba575"
+  },
+  "homepage_url": "https://www.youtube.com/@timexo_official",
+  "host_permissions": [
+    "*://play.autodarts.io/*"
+  ],
+  "icons": {
+    "128": "icon/128.png",
+    "16": "icon/16.png",
+    "48": "icon/48.png"
+  },
+  "manifest_version": 3,
+  "name": "Customize Darts for AutoDarts",
+  "permissions": [
+    "storage"
+  ],
+  "update_url": "https://extension-updates.opera.com/api/omaha/update/",
+  "version": "1.0.0"
+}
