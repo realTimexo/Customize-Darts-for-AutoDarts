@@ -7,8 +7,8 @@ Tools for Autodarts
 </h1>
 
 <p align="center">
-<img src="https://img.shields.io/github/actions/workflow/status/creazy231/tools-for-autodarts/release.yml">
-<img src="https://img.shields.io/github/v/release/creazy231/tools-for-autodarts">
+<img src="https://img.shields.io/github/actions/workflow/status/realTimexo/AutoDarts-Plus/build.yml">
+<img src="https://img.shields.io/github/v/release/realTimexo/AutoDarts-Plus">
 <img src="https://img.shields.io/amo/v/autodarts-plus?logo=firefox&label=Firefox">
 <img src="https://img.shields.io/amo/users/autodarts-plus?logo=firefox&label=Firefox%20Users">
 <img src="https://img.shields.io/badge/dynamic/json?url=https://microsoftedge.microsoft.com/addons/getproductdetailsbycrxid/emckdnomcmmjiimehoiakppgmmcfagdn&query=$.version&label=Edge&logo=microsoftedge">
