@@ -1,33 +1,64 @@
 {
-  "content_scripts": [
-    {
-      "js": [
-        "content-scripts/content.js"
-      ],
-      "matches": [
-        "*://play.autodarts.io/*"
-      ],
-      "run_at": "document_idle"
-    }
-  ],
-  "description": "This Extension allows you to make your own unique darts for AutoDarts",
-  "developer": {
-    "name": "97ba02e3-0e36-4207-901e-d19db1bba575"
-  },
-  "homepage_url": "https://www.youtube.com/@timexo_official",
-  "host_permissions": [
-    "*://play.autodarts.io/*"
-  ],
-  "icons": {
-    "128": "icon/128.png",
-    "16": "icon/16.png",
-    "48": "icon/48.png"
-  },
   "manifest_version": 3,
-  "name": "Customize Darts for AutoDarts",
+  "name": "AutoDarts +",
+  "version": "1.1.0",
+  "description": "AutoDarts + enhances the experience for AutoDarts with new features",
+  "author": "Timexo",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "customize-darts@timexo.io",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
   "permissions": [
     "storage"
   ],
-  "update_url": "https://extension-updates.opera.com/api/omaha/update/",
-  "version": "1.0.0"
+  "host_permissions": [
+    "https://play.autodarts.io/*",
+    "https://api.autodarts.io/*"
+  ],
+  "icons": {
+    "16": "icon/16.png",
+    "48": "icon/48.png",
+    "128": "icon/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://play.autodarts.io/*"
+      ],
+      "js": [
+        "src/core/pageScript.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://play.autodarts.io/*"
+      ],
+      "js": [
+        "src/core/constants.js",
+        "src/core/tokenHelper.js",
+        "src/core/state.js",
+        "src/ui/modals.js",
+        "src/core/logic.js",
+        "src/automation/sync.js",
+        "src/ui/matchbox.js",
+        "src/ui/views/bracket.js",
+        "src/ui/tables.js",
+        "src/ui/views/setup.js",
+        "src/ui/views/league.js",
+        "src/ui/views/groups.js",
+        "src/automation/lobby.js",
+        "src/core/actions.js",
+        "src/ui/renderer.js",
+        "content-scripts/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
 }
