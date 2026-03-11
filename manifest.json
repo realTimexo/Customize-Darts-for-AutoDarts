@@ -3,29 +3,37 @@
   "name": "AutoDarts Plus",
   "version": "1.2.0",
   "description": "AutoDarts + enhances the experience for AutoDarts with new features",
-  "permissions": ["storage"],
+  "author": "Timexo",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "customize-darts@timexo.io",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
   "host_permissions": [
     "https://play.autodarts.io/*",
     "https://api.autodarts.io/*"
   ],
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "autodarts-plus@timexo-studios.com",
-      "strict_min_version": "109.0",
-      "data_collection_permissions": false
-    }
-  },
+
   "icons": {
     "16": "icon/16.png",
     "48": "icon/48.png",
     "128": "icon/128.png"
   },
+
   "content_scripts": [
     {
       "matches": ["https://play.autodarts.io/*"],
       "js": ["src/core/pageScript.js"],
-      "run_at": "document_start",
-      "world": "MAIN"
+      "run_at": "document_start"
     },
     {
       "matches": ["https://play.autodarts.io/*"],
@@ -37,7 +45,7 @@
         "src/core/logic.js",
         "src/automation/sync.js",
         "src/ui/matchbox.js",
-        "src/ui/views/bracket.js",
+        "src/ui/views/bracked.js",
         "src/ui/tables.js",
         "src/ui/views/setup.js",
         "src/ui/views/league.js",
@@ -51,4 +59,3 @@
     }
   ]
 }
-
