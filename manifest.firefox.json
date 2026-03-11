@@ -29,33 +29,32 @@
     "128": "icon/128.png"
   },
 
-  "content_scripts": [
-    {
-      "matches": ["https://play.autodarts.io/*"],
-      "js": ["src/core/pageScript.js"],
-      "run_at": "document_start"
-    },
-    {
-      "matches": ["https://play.autodarts.io/*"],
-      "js": [
-        "src/core/constants.js",
-        "src/core/tokenHelper.js",
-        "src/core/state.js",
-        "src/ui/modals.js",
-        "src/core/logic.js",
-        "src/automation/sync.js",
-        "src/ui/matchbox.js",
-        "src/ui/views/bracket.js",
-        "src/ui/tables.js",
-        "src/ui/views/setup.js",
-        "src/ui/views/league.js",
-        "src/ui/views/groups.js",
-        "src/automation/lobby.js",
-        "src/core/actions.js",
-        "src/ui/renderer.js",
-        "content-scripts/content.js"
-      ],
-      "run_at": "document_idle"
-    }
-  ]
-}
+"content_scripts": [
+  {
+    "matches": ["https://play.autodarts.io/*"],
+    "js": ["assets/pageScript.js-D_5Y7MLN.js"],
+    "run_at": "document_start"
+  },
+  {
+    "matches": ["https://play.autodarts.io/*"],
+    "js": [
+      "assets/constants.js-CslvUQqv.js",
+      "assets/tokenHelper.js-w9b0Kl2-.js",
+      "assets/state.js-C1OI5esN.js",
+      "assets/modals.js-jUSntdYx.js",
+      "assets/logic.js-DFGemB9B.js",
+      "assets/sync.js-C14uHNDl.js",
+      "assets/matchbox.js-BawGxEYg.js",
+      "assets/bracket.js-JOToDuGf.js",
+      "assets/tables.js-g6zkb86a.js",
+      "assets/setup.js-T4tm8Fi4.js",
+      "assets/league.js-BtmeaPVy.js",
+      "assets/groups.js-D-_F2Nh0.js",
+      "assets/lobby.js-BLzlMqGV.js",
+      "assets/actions.js-UyGtT4zT.js",
+      "assets/renderer.js-tZ6b90Bg.js",
+      "assets/content.js-m4yH4jg9.js"
+    ],
+    "run_at": "document_idle"
+  }
+]
