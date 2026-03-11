@@ -1,4 +1,6 @@
-![Autodarts + Logo](https://raw.githubusercontent.com/realTimexo/AutoDarts-Plus/refs/heads/main/assets/img/logo.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/realTimexo/AutoDarts-Plus/refs/heads/main/assets/img/logo.png" alt="AutoDarts + Logo" width="200">
+</p>
 
 Autodarts +
 ===========
@@ -9,7 +11,8 @@ Autodarts +
 
 * * *
 
-> \[!CAUTION\] **AutoDarts +** is developed by the community and is not an integral part of the official Autodarts platform.
+> \[!CAUTION\]
+> **AutoDarts +** is developed by the community and is not an integral part of the official Autodarts platform.
 
 📋 Overview
 -----------
