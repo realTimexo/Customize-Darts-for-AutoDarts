@@ -4,14 +4,20 @@ import manifest from './manifest.json';
 
 export default defineConfig({
   plugins: [crx({ manifest })],
+  server: {
+    port: 5000,
+    host: '0.0.0.0',
+    allowedHosts: true,
+    hmr: {
+      clientPort: 443,
+      host: process.env.REPLIT_DEV_DOMAIN || 'localhost',
+    }
+  },
   build: {
     outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        // Falls du eine Options- oder Popup-Seite hast, hier eintragen
-      }
+      input: {}
     }
   }
 });
-
