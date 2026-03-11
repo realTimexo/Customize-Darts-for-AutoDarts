@@ -45,7 +45,7 @@
         "src/core/logic.js",
         "src/automation/sync.js",
         "src/ui/matchbox.js",
-        "src/ui/views/bracked.js",
+        "src/ui/views/bracket.js",
         "src/ui/tables.js",
         "src/ui/views/setup.js",
         "src/ui/views/league.js",
