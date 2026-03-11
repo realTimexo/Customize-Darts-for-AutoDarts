@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/realTimexo/AutoDarts-Plus/refs/heads/main/assets/img/logo.png" alt="Autodarts + Logo" width="200">
-</p>
+![Autodarts + Logo](https://raw.githubusercontent.com/realTimexo/AutoDarts-Plus/refs/heads/main/assets/img/logo.png)
 
 Autodarts +
 ===========
@@ -11,8 +9,7 @@ Autodarts +
 
 * * *
 
-> [!CAUTION]
-> **AutoDarts +** is developed by the community and is not an integral part of the official Autodarts platform.
+> \[!CAUTION\] **AutoDarts +** is developed by the community and is not an integral part of the official Autodarts platform.
 
 📋 Overview
 -----------
@@ -52,8 +49,7 @@ AutoDarts + is a browser extension that enhances your experience on [autodarts.i
 ### 🎮 Gameplay Features
 
 *   **Local tournaments**: Create your own local tournaments with KO, league or groups
-
-###   
+*   **Ranked**: Play a ranked mode with bronze, silver, gold, platinum, diamond, champion and world master rank
 
 ⚙️ Configuration
 ----------------
@@ -91,6 +87,7 @@ This makes it simple to:
 This project is built using:
 
 *   Javascript
+*   Vite
 
 ### 🚀 Getting Started
 
@@ -100,15 +97,15 @@ This project is built using:
     # Start development server
     yarn dev
     
-    # Build for production
+    # Build for Chrome and Firefox
     yarn build
     
     # Build for Firefox
     yarn build:firefox
     
-    # Create distribution zip
-    yarn zip
-    
+
+    # Build for Chrome
+    yarn build:chrome
 
 🤝 Contributing
 ---------------
